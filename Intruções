@@ -1,0 +1,11 @@
+1º Baixe o arquivo autoramal.zip e descompacte
+
+2º Copie o arquivo autoramal.php para /usr/local/mkauth/scripts
+
+3º Executar manualmente no terminal com o comando
+
+/opt/php5/bin/php -q /usr/local/mkauth/scripts/autoramal.php
+
+4º Exemplo de agendamento para cada 15 minutos
+
+echo "*/15 * * * *  root   /opt/php5/bin/php -q /usr/local/mkauth/scripts/autoramal.php 2> /dev/null" >> /etc/cron.d/sistema
